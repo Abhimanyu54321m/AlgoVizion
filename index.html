@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🔀 Sorting Algorithm Visualizer</h1>
+    <p>Compare two sorting algorithms with animations + theoretical analysis</p>
+  </header>
+
+  <div class="controls">
+    <label>Algorithm 1:
+      <select id="algo1">
+        <option value="bubble">Bubble Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="quick">Quick Sort</option>
+        <option value="heap">Heap Sort</option>
+      </select>
+    </label>
+
+    <label>Algorithm 2:
+      <select id="algo2">
+        <option value="bubble">Bubble Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="quick">Quick Sort</option>
+        <option value="heap">Heap Sort</option>
+      </select>
+    </label>
+
+    <button id="generate">Generate Bars</button>
+    <button id="start">Start Comparison</button>
+  </div>
+
+  <div class="container">
+    <div class="visualizer">
+      <h2>Algorithm 1 (<span id="algo1-name"></span>)</h2>
+      <div id="bars1" class="bars"></div>
+    </div>
+    <div class="visualizer">
+      <h2>Algorithm 2 (<span id="algo2-name"></span>)</h2>
+      <div id="bars2" class="bars"></div>
+    </div>
+  </div>
+
+  <div class="result">
+    <h2>📊 Comparison Result</h2>
+    <div id="comparison-output"></div>
+  </div>
+
+  <script src="algorithms.js"></script>
+  <script src="complexity.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
